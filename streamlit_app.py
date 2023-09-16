@@ -32,7 +32,7 @@ if menu == 'Home':
         st.pyplot(correl)
     
     st.header('Graphs')
-    graph=st.selectbox('Differernt types of graphs',['Choose graph','Scatter Plot', 'Bar Graph','Histogram'])
+    graph=st.selectbox('Differernt types of graphs',['Choose a graph','Scatter Plot', 'Bar Graph','Histogram'])
     if graph=='Scatter Plot':
         caratValue=st.slider('Carat Filter',0,6)
         scatterData=data.loc[data['carat']>=caratValue]
